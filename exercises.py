@@ -52,4 +52,21 @@ def combine_foods():
     return meal
 
 # Call the function and print the result
-print('Exercise 2:', combine_foods())
+# print('Exercise 2:', combine_foods())
+
+
+# Exercise 3: Slicing Tuples
+#
+# Using the slice operator, assign a new tuple containing only the last two food strings in the foods to a variable named last_two_foods.
+
+def slice_foods():
+    # your code here
+    foods = ("cheeseburger", "bagel", "taco")
+    last_two_foods = foods[-2:] #<- slice notation -[start:stop:step(increment btw'n elements)]    
+    # [-2:] -> starting point is the 2nd to last element - can use other negative numbers (-2, -3, -4...) - negative indexing 
+      
+    return last_two_foods 
+
+# Call the function and print the result
+print('Exercise 3:', slice_foods())
+
