@@ -32,7 +32,7 @@ def manage_students():
     return first_student, last_student
 
 # Call the function and print the result
-print('Exercise 1:', manage_students())
+# print('Exercise 1:', manage_students())
 
 
 # Exercise 2: Loop and String Concatenation
@@ -44,10 +44,12 @@ print('Exercise 1:', manage_students())
 def combine_foods():
     # your code here
     foods = ("cheeseburger", "bagel", "taco")
-    meal = ""
+    meal = " "
 
+    for food in foods:
+        meal += food + ", "
 
-
+    return meal
 
 # Call the function and print the result
-# print('Exercise 2:', combine_foods())
+print('Exercise 2:', combine_foods())
