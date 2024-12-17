@@ -32,7 +32,7 @@ def manage_students():
     return first_student, last_student
 
 # Call the function and print the result
-# print('Exercise 1:', manage_students())
+print('Exercise 1:', manage_students())
 
 
 # Exercise 2: Loop and String Concatenation
@@ -52,7 +52,7 @@ def combine_foods():
     return meal
 
 # Call the function and print the result
-# print('Exercise 2:', combine_foods())
+print('Exercise 2:', combine_foods())
 
 
 # Exercise 3: Slicing Tuples
@@ -75,7 +75,7 @@ def slice_foods():
     """
 
 # Call the function and print the result
-# print('Exercise 3:', slice_foods())
+print('Exercise 3:', slice_foods())
 
 
 # Exercise 4: Dictionaries and String Formatting
@@ -109,11 +109,17 @@ print('Exercise 4:', hometown_info())
 
 def list_home_town_items():
     # your code here
-    home_town_items = {
-        "city": "",
-        "state": "",
-        "population": ""
+    home_town_items = []
+    home_town = {
+        "city": "Virginia Beach",
+        "state": "VA",
+        "population": "too many people to count",
     }
+
+    for key, val in home_town.items():
+        home_town_items.append(f"{key} = {val}", )
+    
+    return home_town_items
 
 # Call the function and print the result
 print('Exercise 5:', list_home_town_items())
