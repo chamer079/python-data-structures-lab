@@ -62,11 +62,41 @@ def combine_foods():
 def slice_foods():
     # your code here
     foods = ("cheeseburger", "bagel", "taco")
-    last_two_foods = foods[-2:] #<- slice notation -[start:stop:step(increment btw'n elements)]    
-    # [-2:] -> starting point is the 2nd to last element - can use other negative numbers (-2, -3, -4...) - negative indexing 
+    last_two_foods = foods[-2:] #<- slice notation -[start:stop:step(increment btw'n elements)] -> is a range    
+    # [-2:] -> dynamic - starting point is the 2nd to last element - can use other negative numbers (-2, -3, -4...) - negative indexing to slice x amount elements from tuple, list, dicts
       
     return last_two_foods 
+  
+    """
+     --- returns last 2 food...why doesn't (1, -1) work? - returns bagel
+    last_two_foods = slice(1, None)
+    return foods[last_two_foods]
+    
+    """
 
 # Call the function and print the result
-print('Exercise 3:', slice_foods())
+# print('Exercise 3:', slice_foods())
 
+
+# Exercise 4: Dictionaries and String Formatting
+#
+# Create a dictionary named home_town containing the keys of city, state, and population.
+# Using the home_town dictionary, assign to a variable named home_town_message a string with this format: “I was born in <city>, <state> - population of <population>”
+
+def hometown_info():
+    # your code here
+    home_town = {
+        "city": "Virginia Beach",
+        "state": "VA",
+        "population": "too many people to count",
+    }
+
+    city = home_town["city"]
+    state = home_town["state"]
+    population = home_town["population"]
+
+    home_town_message = (f"I lived in {city}, {state} - population of {population}")
+    return(home_town_message)
+
+# Call the function and print the result
+print('Exercise 4:', hometown_info())
